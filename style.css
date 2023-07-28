@@ -1,0 +1,69 @@
+img{
+    width:180px;
+    height:240px;
+}
+.card{
+    margin:20px 40px 0px 10px;
+    height:300px;
+    box-sizing: content-box;
+}
+._container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top:10px
+}
+ul{
+    list-style:none;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.flip-card{
+    width:320px;
+    height: 300px;
+}
+button{
+    margin-top: 10px;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner{
+    transform:rotateX(-180deg)
+}
+.flip-card-frontside, .flip-card-backside{
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+.flip-card-backside{
+    transform: rotateX(-180deg);
+}
+.navbar2{
+    background-color: rgba(35, 34, 34, 0.326) !important;
+    color:wheat
+}
+.double-border-card {
+    border: 2px solid rgba(0, 0, 0, 0.8); /* Outer border color and thickness */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8), 0 0 0 4px rgba(0, 0, 0, 0.8); /* Outer and Inner border color and thickness */
+    padding: 10px;
+}
+.double-border-card-white {
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Outer border color and thickness */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6) , 0 0 0 4px rgba(255, 255, 255, 0.6) ; /* Outer and Inner border color and thickness */
+    padding: 10px;
+}
+.buttonOutline{
+    border:white;
+    color:white;
+}
+
